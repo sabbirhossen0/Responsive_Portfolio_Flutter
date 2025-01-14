@@ -29,7 +29,7 @@ class _AboutmeState extends State<Aboutme> {
                       padding: const EdgeInsets.only(right: 40.0),
                       child: ClipOval(
                         child: Image.asset(
-                          'assets/sabbir.png',
+                          'assets/sabbir2.png',
                           height: 200, // Adjust height as needed
                           width: 200,  // Adjust width as needed
                           fit: BoxFit.cover,
@@ -47,7 +47,7 @@ class _AboutmeState extends State<Aboutme> {
                       padding: const EdgeInsets.only(right: 40.0),
                       child: ClipOval(
                         child: Image.asset(
-                          'assets/sabbir.png',
+                          'assets/sabbir2.png',
                           height: 300, // Adjust height as needed
                           width: 300,  // Adjust width as needed
                           fit: BoxFit.cover,
@@ -192,13 +192,23 @@ Padding(
                       fontWeight: FontWeight.bold
                   ),),
                   SizedBox(height: 10),
-                  buildSkillContainer("C", 0.8, context),
+                  buildSkillContainer("Python", 0.8, context),
+                  SizedBox(height: 10),
+                  buildSkillContainer("Django Rest Framework", 0.8, context),
                   SizedBox(height: 10),
                   buildSkillContainer("Dart", 0.7, context),
                   SizedBox(height: 10),
                   buildSkillContainer("Flutter", 0.6, context),
                   SizedBox(height: 10),
                   buildSkillContainer("Java", 0.4, context),
+                  SizedBox(height: 10),
+                  buildSkillContainer("C", 0.4, context),
+                  SizedBox(height: 10),
+                  buildSkillContainer("C++", 0.4, context),
+                  SizedBox(height: 10),
+                  buildSkillContainer("Mysql", 0.4, context),
+                  SizedBox(height: 10),
+                  buildSkillContainer("Postgresql", 0.4, context),
                 ],
               ),
                   ),
@@ -282,13 +292,23 @@ Padding(
                             fontWeight: FontWeight.bold
                         ),),
                         SizedBox(height: 10),
-                        buildSkillContainer("C", 0.8, context),
+                        buildSkillContainer("Python", 0.8, context),
+                        SizedBox(height: 10),
+                        buildSkillContainer("Django Rest Framework", 0.8, context),
                         SizedBox(height: 10),
                         buildSkillContainer("Dart", 0.7, context),
                         SizedBox(height: 10),
                         buildSkillContainer("Flutter", 0.6, context),
                         SizedBox(height: 10),
                         buildSkillContainer("Java", 0.4, context),
+                        SizedBox(height: 10),
+                        buildSkillContainer("C", 0.4, context),
+                        SizedBox(height: 10),
+                        buildSkillContainer("C++", 0.4, context),
+                        SizedBox(height: 10),
+                        buildSkillContainer("Mysql", 0.4, context),
+                        SizedBox(height: 10),
+                        buildSkillContainer("Postgresql", 0.4, context),
                       ],
                     ),
                   ),
