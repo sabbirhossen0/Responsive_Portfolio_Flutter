@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sabbirme/view/responsive.dart';
 import 'package:sabbirme/view/animation/scaleanimation.dart';
 import 'package:sabbirme/view/animation/typewriter.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 class Aboutme extends StatefulWidget {
   const Aboutme({super.key});
 
@@ -327,11 +328,35 @@ Padding(
               child: Center(
                 child: Column(
                   children: [
-                    Text('EXPERIENCE',style: TextStyle(
-                        fontSize: 50,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white
-                    ),),
+
+                    //
+                    // Text('EXPERIENCE',style: TextStyle(
+                    //     fontSize: 50,
+                    //     fontWeight: FontWeight.bold,
+                    //     color: Colors.white
+                    // ),),
+
+                    AnimatedTextKit(
+                      animatedTexts: [
+                        ColorizeAnimatedText(
+                          'EXPERIENCE',
+                          textStyle: TextStyle(
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          colors: colorizeColors,
+                          speed: Duration(milliseconds: 200), // Slower animation speed
+                        ),
+                      ],
+                      totalRepeatCount: 10000, // Adjust this if you want a specific repeat count
+                      isRepeatingAnimation: true, // Infinite repetition
+                    ),
+
+
+
+
+
+
                     Text('What I have done?',style: TextStyle(
                         color: Colors.yellow,
                         fontWeight: FontWeight.bold
@@ -366,11 +391,29 @@ Padding(
                 child: Center(
                   child: Column(
                     children: [
-                      Text('CONTACT',style: TextStyle(
-                          fontSize: 50,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white
-                      ),),
+                      // Text('CONTACT',style: TextStyle(
+                      //     fontSize: 50,
+                      //     fontWeight: FontWeight.bold,
+                      //     color: Colors.white
+                      // ),),
+
+                      AnimatedTextKit(
+                        animatedTexts: [
+                          ColorizeAnimatedText(
+                            'Contact',
+                            textStyle: TextStyle(
+                              fontSize: 50,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            colors: colorizeColors,
+                            speed: Duration(milliseconds: 200), // Slower animation speed
+                          ),
+                        ],
+                        totalRepeatCount: 10000, // Adjust this if you want a specific repeat count
+                        isRepeatingAnimation: true, // Infinite repetition
+                      ),
+
+
                       Text('Are You Looking For Your Business Online Presence? I am here. 🙂',style: TextStyle(
                           color: Colors.yellow,
                           fontWeight: FontWeight.bold
@@ -580,3 +623,11 @@ Padding(
   }
 
 }
+
+const colorizeColors = [
+  Colors.green,
+  Colors.blue,
+  Colors.purple,
+  Colors.orange,
+  Colors.red,
+];

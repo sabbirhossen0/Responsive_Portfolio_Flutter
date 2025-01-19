@@ -7,6 +7,7 @@ import 'package:sabbirme/view/course/course.dart';
 import 'package:sabbirme/view/animation/typewriter.dart';
 import 'package:sabbirme/view/blog/blog.dart';
 import 'package:sabbirme/view/Sayhelp/help.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class routing extends StatefulWidget {
   const routing({super.key});
@@ -71,11 +72,33 @@ class _HomeState extends State<routing> {
                    padding: const EdgeInsets.only(left: 25.0,top: 18),
                    child: Row(
            children: [
-             Text('sabbirhossen',style: TextStyle(
-                 color: Colors.white,
-                 fontWeight: FontWeight.bold,
-                 fontSize: 20
-             ),),
+             // Text('sabbirhossen',style: TextStyle(
+             //     color: Colors.white,
+             //     fontWeight: FontWeight.bold,
+             //     fontSize: 20
+             // ),),
+
+             AnimatedTextKit(
+               animatedTexts: [
+                 WavyAnimatedText('Sabbir Hossen',textStyle: TextStyle(color:Colors.white, fontSize: 25, fontWeight: FontWeight.bold)
+
+                 ),
+               ],
+
+               totalRepeatCount: 100000,
+               isRepeatingAnimation: true,
+               pause: const Duration(milliseconds: 10000),
+               // displayFullTextOnTap: true,
+               // stopPauseOnTap: true,
+               // onTap: () {
+               //   print("Tap Event");
+               // },
+             ),
+
+
+
+
+
              Icon(
                Icons.circle,
                size: 12.0, // Adjust size for the dot
@@ -103,11 +126,28 @@ class _HomeState extends State<routing> {
                 children: [
             Padding(
               padding: const EdgeInsets.only(left: 20.0),
-              child: Text('Sabbir Hossen',style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-                fontSize: 35
-              ),),
+              child:
+
+              // Text('Sabbir Hossen',style: TextStyle(
+              //   color: Colors.white,
+              //   fontWeight: FontWeight.bold,
+              //   fontSize: 35
+              // ),),
+
+              AnimatedTextKit(
+                animatedTexts: [
+                  WavyAnimatedText('Sabbir Hossen',textStyle: TextStyle(color:Colors.white, fontSize: 25, fontWeight: FontWeight.bold)),
+                ],
+                isRepeatingAnimation: true,
+                pause: const Duration(milliseconds: 1000),
+                displayFullTextOnTap: true,
+                stopPauseOnTap: true,
+                onTap: () {
+                  print("Tap Event");
+                },
+              ),
+
+
             ),
                   Icon(
                     Icons.circle,

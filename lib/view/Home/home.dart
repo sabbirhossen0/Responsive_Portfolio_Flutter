@@ -462,14 +462,14 @@ class _HomeState extends State<Home> {
   List<Widget> whatdo() {
     return [
       doview(
-        des:'Proficient in Figma design, creating sleek user interfaces and intuitive user experiences with a strong eye for aesthetics and usability.',
+        des:'Specialized in creating interactive and responsive user interfaces using modern  technologies. Adept at translating design mockups into clean, efficient code with a focus on performance and usability',
         icon: 'assets/development.png',
         service: 'Font-End Development',
         id: 1,
       ),
       SizedBox(width: 40, height: 20), // Adds space between items
       doview(
-        des:'Proficient in Figma design, creating sleek user interfaces and intuitive user experiences with a strong eye for aesthetics and usability.',
+        des:'Experienced in building robust and scalable server-side applications. Proficient in designing APIs, managing databases, and ensuring secure and efficient communication between systems',
         icon: 'assets/backend.png',
         service: 'BackEnd Development',
         id: 2,
